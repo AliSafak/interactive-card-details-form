@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="assets/js/index.js" defer> </script>
+  <title>Interactive Card Details Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card-section">
+      <div class="card-container">
+        <div class="card-back">
+          <span class="grey-area"> 000</span>
+        </div>
+        <div class="card-front">
+          <img class="circles" src="assets/img/circles.svg" alt="">
+          
+          <div class="number-section">
+            <h3 class="IBAN">0000 0000 0000 0000 </h3>
+          </div>
+          <div class="name-date-section">
+            <h6 class="cardOwner">ALI SAFAK</h6>
+            <h4 class="cardExpDate"> 00 / 00</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-section">
+      <h6> CARDHOLDER NAME</h6>
+      <input class="inputName" type="text" value="" placeholder="e.g. Jane Appleseed">
+      <h6>CARD NUMBER</h6>
+      <input id="credit-card" class="inputCardNumber" type="number" value="" placeholder="e.g. 1234 5678 9123 0000">
+      <div class="input-section-inner">
+        <div class="text-part">
+          <h6>EXP. DATE (MM/YY)</h6>
+          <h6>CVC</h6>
+        </div>
+        <div class="input-inner-dates">
+          <input class="monthText" type="number" min="01" max="12" placeholder="MM" class="inputDateMounth">
+          <input class="yearText" type="number" min="01" max="24" placeholder="YY" class="inputDateYear">
+          <input class="securityNumberText" type="number" min="01" max="999" placeholder="e.G. 123" class="inputCvc">
+        </div>
+      </div>
+      <button class="confirm">Confirm</button>
+    </div>
+
+    <div class="check-section">
+      <img src="assets/img/check.svg" alt="">
+      <h1>THANK YOU!</h1>
+      <h2>We’ve added your card details</h2>
+      <button>Continue</button>
+    </div>
+  </div>
+</body>
+
+</html>
